@@ -1,0 +1,38 @@
+/* pseudo class selectors */
+article :first-child{
+    background-color: red;
+}
+article:nth-child(1){
+    background-color: blue;
+}
+ul li:nth-child(odd){
+    color: red
+}
+ul li:nth-child(even){
+    color: blue
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: green;
+}
+a:focus{
+    /* color: blue; */
+}
+p::first-letter{
+    color: red;
+}
+p::first-line{
+    color: blue;
+} 
+p::selection{
+    color: green;
+}
+P::before{
+    content: "... ";
+    display: block
+}
+P::after{
+    content: " ...";
+}
